@@ -1,0 +1,23 @@
+body{
+    background-color: #212121;
+    color: #fff;
+}
+.Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav:first-child{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+.project-link{
+    background-color: #fff;
+    width: 90%;
+    padding: 35px;
+    margin: 5px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #212121;
+}

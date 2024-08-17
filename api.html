@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API</title>
+</head>
+<body>
+    Welcome to Chai aur API
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET','http://www.api.github.com/users/hiteshchoudhary');
+        xhr.onreadystatechange = ()=> {
+            console.log(xhr.readyState);
+            if(xhr.readyState === 4)console.log("ALL OK");
+        }
+        xhr.send();
+    </script>
+</body>
+</html>

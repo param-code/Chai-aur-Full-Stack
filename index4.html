@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="view-port" content="width=device-width initial-scale=1.0">
+    <title>Last DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>React</li>
+    </ul>
+</body>
+<script>
+    document.querySelector("body").style.backgroundColor = "#212121";
+    document.querySelector("body").style.color = "#fff";
+    function addLanguage(LangName){
+        const add = document.createElement("li");
+        add.innerHTML = `${LangName}`;
+        document.querySelector(".language").appendChild(add);
+    }
+    addLanguage("Ruby");
+    addLanguage("Rust");
+
+    function addOpLanguage(LangName){
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(LangName));
+        document.querySelector(".language").appendChild(li);
+    }
+    addOpLanguage("Go");
+    const edit = document.querySelector("li:nth-child(3)");
+    const newli = document.createElement("li");
+    newli.textContent = "Welcome to MaryLand";
+    edit.replaceWith(newli);
+
+    const firstEdit = document.querySelector("li:first-child");
+    firstEdit.outerHTML = "<li style='color: gold'>NextJs</li>"
+    const lastEdit  = document.querySelector("li:last-child");
+    lastEdit.remove();
+</script>
+</html>

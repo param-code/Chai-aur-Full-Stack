@@ -1,0 +1,13 @@
+nav{
+    background-color: white;
+}
+body{
+    background-color: #212121;
+    color: #fff;
+}
+#time{
+    background-color: orange;
+    border: solid 1px orange;
+    padding: 10px;
+    border-radius: 10px;
+}
